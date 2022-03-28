@@ -25,7 +25,7 @@ public class ElectronicStore {
                 this.brand = brand;
             }
             else{
-                throw new IllegalArgumentException("Title must be longer than 4 characters!");
+                throw new IllegalArgumentException("brand must be longer than 4 characters!");
             }
         }
 
@@ -39,7 +39,7 @@ public class ElectronicStore {
                 this.name = name;
             }
             else{
-                throw new IllegalArgumentException("Author must be longer than 2 characters!");
+                throw new IllegalArgumentException("name must be longer than 2 characters!");
             }
         }
 
@@ -52,7 +52,7 @@ public class ElectronicStore {
                 this.part = part;
             }
             else {
-                throw new IllegalArgumentException("The isbn must be 13 numeric characters!");
+                throw new IllegalArgumentException("The part must be 13 numeric characters!");
             }
         }
 
