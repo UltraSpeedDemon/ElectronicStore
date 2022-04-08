@@ -9,7 +9,7 @@ public class PCBuildController {
 
     @FXML
     protected void onHelloButtonClick() {
-        welcomeText.setText("Computer Build!");
+        welcomeText.setText("Computer Build! ");
     }
 
 }
