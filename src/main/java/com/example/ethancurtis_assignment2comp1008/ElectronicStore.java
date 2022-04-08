@@ -25,7 +25,7 @@ public class ElectronicStore {
                 this.brand = brand;
             }
             else{
-                throw new IllegalArgumentException("brand must be longer than 4 characters!");
+                throw new IllegalArgumentException("brand must be longer than 4 characters!");//Validation
             }
         }
 
@@ -39,20 +39,21 @@ public class ElectronicStore {
                 this.name = name;
             }
             else{
-                throw new IllegalArgumentException("name must be longer than 2 characters!");
+                throw new IllegalArgumentException("name must be longer than 2 characters!"); //Validation
             }
         }
 
         public String getPart() {
             return part;
         }
+
         public void setPart(String part) {
             if (part.length() >= 2) {  /** more than 2 characters **/
                 part.trim(); /** Trim white space **/
                 this.part = part;
             }
             else {
-                throw new IllegalArgumentException("The part must be 13 numeric characters!");
+                throw new IllegalArgumentException("The part must be 13 numeric characters!");//Validation
             }
         }
 
@@ -65,7 +66,7 @@ public class ElectronicStore {
                 this.price = price;
             }
             else {
-                throw new IllegalArgumentException("Price must be between $0 and $1500!");
+                throw new IllegalArgumentException("Price must be between $0 and $1500!");//Validation
             }
         }
     }
