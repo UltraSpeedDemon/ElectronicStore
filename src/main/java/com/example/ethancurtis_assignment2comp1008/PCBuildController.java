@@ -170,7 +170,6 @@ public class PCBuildController implements Initializable {
             }
             btnNextPartPushed();
             displayComputerBuild(computerBuild1); /** Starts the display method **/
-            //toAFile(computerBuild1); /** Starts the to a File method **/
         }
          else{
              i = 0; /** Resets Loop **/
@@ -204,9 +203,8 @@ public class PCBuildController implements Initializable {
         displayWishParts(wishList); /** Starts the display method to send to displayWishParts method with wishlist arraylist **/
     }
     @FXML
-    private void toAFile(Computer computer)
+    private void toAFile(Computer computer) //We haven't learned to a file so, this is based on the internet. NOT CALLED METHOD
     {
-        ElectronicStore parts = computer.getParts(i);
         /** Method to write instances to a file **/
         Writer writer = null;
 
