@@ -47,7 +47,7 @@ public class Computer {
         return output;
     }
 
-    public String getParts(){ /** contains all of the parts in the Computer Build**/
+    public String getParts(){ /** contains all of the parts in the Computer Build**/ //unused in final product
         String partList = "";
         for (ElectronicStore part : parts)
             partList += (part.getPart() + ",");
@@ -55,7 +55,7 @@ public class Computer {
         return partList;
     }
 
-    public ArrayList<String> getPartsInBrand(String part) /** has a part as an argument and displays all the parts in that brand*/
+    public ArrayList<String> getPartsInBrand(String part) /** has a part as an argument and displays all the parts in that brand*/ //unused in final product
     {
         ArrayList<String> Build = new ArrayList<>(); /** New array lis to hold books **/
 

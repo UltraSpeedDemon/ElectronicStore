@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ElectronicStoreTest {
+class ElectronicStoreTest {  //tests for both model classes
 
     private ElectronicStore store1;
     //getters for instances not included
@@ -17,25 +17,45 @@ class ElectronicStoreTest {
 
     @Test
     void setBrand() { //set Brand test
-        store1.setBrand("Intel");
-        assertEquals("Intel",store1.getBrand());
+        store1.setBrand("Nvidia");
+        assertEquals("Nvidia",store1.getBrand());
     }
 
     @Test
     void setName() { //set Name test
-        store1.setBrand("GTX 1080");
-        assertEquals("GTX 1080",store1.getName());
+        store1.setName("RTX 3090");
+        assertEquals("RTX 3090",store1.getName());
     }
 
     @Test
     void setPart() { //set Part test
-        store1.setBrand("CPU");
-        assertEquals("CPU",store1.getPart());
+        store1.setPart("Graphics Card");
+        assertEquals("Graphics Card",store1.getPart());
     }
 
     @Test
     void setPrice() { //set Price test
         store1.setPrice(100.00);
         assertEquals(100.00, store1.getPrice());
+    }
+
+    @Test
+    void getBrand() { //get Price test
+        store1.getBrand();
+    }
+
+    @Test
+    void getName() { //get Name test
+        store1.getName();
+    }
+
+    @Test
+    void getPart() { //get Part test
+        store1.getPart();
+    }
+
+    @Test
+    void getPrice() { //get Price test
+        store1.getPrice();
     }
 }
