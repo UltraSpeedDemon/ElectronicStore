@@ -80,12 +80,12 @@
             <Font name="Consolas" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="numParts" layoutX="607.0" layoutY="110.0" prefHeight="41.0" prefWidth="72.0" text="numParts" textFill="YELLOW">
+      <Label fx:id="numParts" layoutX="586.0" layoutY="111.0" prefHeight="41.0" prefWidth="72.0" text="numParts" textFill="YELLOW">
          <font>
             <Font name="Consolas" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="value" layoutX="607.0" layoutY="73.0" prefHeight="41.0" prefWidth="72.0" text="value" textFill="#f6ff00">
+      <Label fx:id="value" layoutX="586.0" layoutY="73.0" prefHeight="41.0" prefWidth="138.0" text="value" textFill="#f6ff00">
          <font>
             <Font name="Consolas" size="14.0" />
          </font>
@@ -135,7 +135,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="numWish" layoutX="607.0" layoutY="150.0" prefHeight="41.0" prefWidth="72.0" textFill="YELLOW">
+      <Label fx:id="numWish" layoutX="586.0" layoutY="150.0" prefHeight="41.0" prefWidth="72.0" textFill="YELLOW">
          <font>
             <Font name="Consolas" size="14.0" />
          </font>

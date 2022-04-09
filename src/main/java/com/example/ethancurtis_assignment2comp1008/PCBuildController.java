@@ -123,7 +123,7 @@ public class PCBuildController implements Initializable {
 
         /** Elecrontic Store / Computer Info **/
         numParts.setText(Integer.toString(computer.getNumOfParts()));
-        value.setText(Double.toString(computer.getComputerValue()));
+        value.setText(computer.getComputerValue());
         locationPlace.setText(computer.getLocation());
     }
     int wishListTotal = 0;
@@ -136,7 +136,7 @@ public class PCBuildController implements Initializable {
         recentName.setText(wishList1.getName());
     }
     @FXML
-    private void btnAddWishPushed() //TEXTFIELDS MUST BE FILLED IN OR EXCPETION ERROR WILL OCCUR
+    private void btnAddWishPushed() //TEXTFIELDS MUST BE FILLED IN OR EXCEPTION ERROR WILL OCCUR
     {
         int i = 0;
         String wishPart = partWish.getText();

@@ -1,5 +1,8 @@
 package com.example.ethancurtis_assignment2comp1008;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Computer {
@@ -33,12 +36,15 @@ public class Computer {
         int partNum = parts.size();
         return partNum;
     }
-    public int getComputerValue(){ /** returns parts from Electronic Store by adding all of their prices **/
-        int totalPrice = 0;
+
+    private static final DecimalFormat df = new DecimalFormat("0.00"); //decimal format
+
+    public String getComputerValue(){ /** returns parts from Electronic Store by adding all of their prices **/
+        double totalPrice = 0;
         for (ElectronicStore part : parts)
             totalPrice += part.getPrice();
-
-        return totalPrice;
+        String output = df.format(totalPrice);
+        return output;
     }
     public String getParts(){ /** contains all of the parts in the Computer Build**/
         String partList = "";
