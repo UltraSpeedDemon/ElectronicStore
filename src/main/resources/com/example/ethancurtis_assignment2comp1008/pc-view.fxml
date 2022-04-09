@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="numPad" prefHeight="400.0" prefWidth="950.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ethancurtis_assignment2comp1008.PCBuildController">
+<AnchorPane fx:id="numPad" prefHeight="425.0" prefWidth="950.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ethancurtis_assignment2comp1008.PCBuildController">
    <children>
-      <Label fx:id="locationPlace" layoutX="135.0" layoutY="111.0" prefHeight="41.0" prefWidth="257.0" text="locationPlace" textFill="#e5ff00">
+      <Label fx:id="locationPlace" layoutX="151.0" layoutY="110.0" prefHeight="41.0" prefWidth="257.0" text="locationPlace" textFill="#e5ff00">
          <font>
             <Font name="Consolas" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="22.0" layoutY="120.0" text="Location:" textFill="#e9ff00">
+      <Label layoutX="36.0" layoutY="117.0" text="Location:" textFill="#e9ff00">
          <font>
             <Font name="Consolas Bold" size="18.0" />
          </font>
@@ -117,12 +117,12 @@
          </font>
       </Label>
       <Button fx:id="btnAddWish" layoutX="474.0" layoutY="333.0" mnemonicParsing="false" onAction="#btnAddWishPushed" text="Add Wish" />
-      <Label layoutX="22.0" layoutY="82.0" text="Name:" textFill="#e9ff00">
+      <Label layoutX="42.0" layoutY="83.0" text="Name:" textFill="#e9ff00">
          <font>
             <Font name="Consolas Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="135.0" layoutY="76.0" prefHeight="41.0" prefWidth="177.0" text="Canada Computers" textFill="#e5ff00">
+      <Label layoutX="152.0" layoutY="73.0" prefHeight="41.0" prefWidth="177.0" text="Canada Computers" textFill="#e5ff00">
          <font>
             <Font name="Consolas" size="14.0" />
          </font>

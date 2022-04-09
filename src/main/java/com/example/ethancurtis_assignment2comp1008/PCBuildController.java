@@ -3,6 +3,7 @@ package com.example.ethancurtis_assignment2comp1008;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.scene.control.TextField;
@@ -119,15 +120,15 @@ public class PCBuildController implements Initializable {
         recentName.setText(wishList1.getName());
     }
     @FXML
-    private void btnAddWishPushed()
+    private void btnAddWishPushed() //TEXTFIELDS MUST BE FILLED IN OR EXCPETION ERROR WILL OCCUR
     {
         int i = 0;
         String wishPart = partWish.getText();
         String wishName = nameWish.getText();
-        nameWish.setText("");
-        partWish.setText("");
-        Computer wishList = new Computer("510 Bryne Drive,ON L4N 9P6"); //same location
-        ElectronicStore wish1 = new ElectronicStore("TestingRandomWishBrand",wishName,wishPart,10.00);//random brand and price values -- List of Wishes
+        nameWish.setText(""); //clears textfields
+        partWish.setText(""); //clears textfields
+        Computer wishList = new Computer("510 Bryne Drive, ON L4N 9P6"); //same location
+        ElectronicStore wish1 = new ElectronicStore("TestingRandomWishBrand",wishName,wishPart,10.00);//random brand and price values
             wishList.addPart(wish1);
         wishListTotal = wishListTotal + 1;
         numWish.setText(""+wishListTotal);
@@ -138,13 +139,13 @@ public class PCBuildController implements Initializable {
     private void btnNextPartPushed(){
         if(i < 5){
             i++;
-            Computer computerBuild = new Computer("510 Bryne Drive,ON L4N 9P6");
-            ElectronicStore part1 = new ElectronicStore("Nvidia","RTX 3070","Graphics Card",1199.99);
-            ElectronicStore part2 = new ElectronicStore("Cooler Master","Hyper 212 Black","CPU Fan",59.99);
-            ElectronicStore part3 = new ElectronicStore("Intel","I7-9700K","CPU",745.99);
-            ElectronicStore part4 = new ElectronicStore("Asus","Z-390 Prime","MotherBoard",329.99);
-            ElectronicStore part5 = new ElectronicStore("G-SKILL","Trident-Z 32GB","Ram",249.99);
-            ElectronicStore part6 = new ElectronicStore("Corsair","275R Mid-Tower","Case",109.99);
+            Computer computerBuild = new Computer("510 Bryne Drive, ON L4N 9P6");
+            ElectronicStore part1 = new ElectronicStore("Nvidia","RTX 3070","Graphics Card",1199.19);
+            ElectronicStore part2 = new ElectronicStore("Cooler Master","Hyper 212 Black","CPU Fan",59.89);
+            ElectronicStore part3 = new ElectronicStore("Intel","I7-9700K","CPU",745.49);
+            ElectronicStore part4 = new ElectronicStore("Asus","Z-390 Prime","MotherBoard",329.29);
+            ElectronicStore part5 = new ElectronicStore("G-SKILL","Trident-Z 32GB","Ram",282.59);
+            ElectronicStore part6 = new ElectronicStore("Corsair","275R Mid-Tower","Case",109.29);
             computerBuild.addPart(part1);
             computerBuild.addPart(part2);
             computerBuild.addPart(part3);
