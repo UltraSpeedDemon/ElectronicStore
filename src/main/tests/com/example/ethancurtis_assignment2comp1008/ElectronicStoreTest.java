@@ -9,6 +9,7 @@ class ElectronicStoreTest {  //tests for both model classes
 
     private ElectronicStore store1;
     //getters for instances not included
+    //lines uncovered are exception argument lines
 
     @BeforeEach
     void setUp() {
