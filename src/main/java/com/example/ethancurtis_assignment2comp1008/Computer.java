@@ -59,4 +59,7 @@ public class Computer {
         }
         return Build;
     }
+    public ElectronicStore getParts(int j){ /** gets the books from the library **/
+        return parts.get(j);
+    }
 }

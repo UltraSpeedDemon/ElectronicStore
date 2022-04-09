@@ -62,11 +62,10 @@ public class ElectronicStore {
         }
 
         public void setPrice(double price) {
-            if(price >= 0  && price <= 1500){ /** Price must be between 0 and 1500 **/
+            if (price >= 0 && price <= 1500) { /** Price must be between 0 and 1500 **/
                 this.price = price;
-            }
-            else {
+            } else {
                 throw new IllegalArgumentException("Price must be between $0 and $1500!");//Validation
             }
         }
-    }
+}
