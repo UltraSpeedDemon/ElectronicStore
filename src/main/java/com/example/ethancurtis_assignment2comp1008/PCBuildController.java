@@ -3,16 +3,20 @@ package com.example.ethancurtis_assignment2comp1008;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.scene.control.TextField;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.image.Image;
 
 public class PCBuildController implements Initializable {
+
+
+    @FXML
+    private ImageView IvOne;
 
     @FXML
     private Label brand;
@@ -71,6 +75,15 @@ public class PCBuildController implements Initializable {
     //loads background
     Image background = new Image(getClass().getResource("img/computerBuild.jpg").toExternalForm());
 
+    //part images
+    Image graphicsCard = new Image(getClass().getResource("img/graphicsCard.png").toExternalForm());
+    Image cpu = new Image(getClass().getResource("img/cpu.png").toExternalForm());
+    Image cpufan = new Image(getClass().getResource("img/cpufan.png").toExternalForm());
+    Image motherboard = new Image(getClass().getResource("img/motherboard.png").toExternalForm());
+    Image ram = new Image(getClass().getResource("img/ram.png").toExternalForm());
+    Image pcCase = new Image(getClass().getResource("img/case.png").toExternalForm());
+
+
     /** Variable/Flag **/
     int i = 0;
 
@@ -78,12 +91,12 @@ public class PCBuildController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Computer computerBuild = new Computer("510 Bryne Drive,ON L4N 9P6");
-        ElectronicStore part1 = new ElectronicStore("Nvidia","RTX 3070","Graphics Card",1199.19);
-        ElectronicStore part2 = new ElectronicStore("Cooler Master","Hyper 212 Black","CPU Fan",59.89);
-        ElectronicStore part3 = new ElectronicStore("Intel","I7-9700K","CPU",745.49);
-        ElectronicStore part4 = new ElectronicStore("Asus","Z-390 Prime","MotherBoard",329.29);
-        ElectronicStore part5 = new ElectronicStore("G-SKILL","Trident-Z 32GB","Ram",282.59);
-        ElectronicStore part6 = new ElectronicStore("Corsair","275R Mid-Tower","Case",109.29);
+            ElectronicStore part1 = new ElectronicStore("Nvidia","RTX 3070","Graphics Card",1199.19);
+            ElectronicStore part2 = new ElectronicStore("Cooler Master","Hyper 212 Black","CPU Fan",59.89);
+            ElectronicStore part3 = new ElectronicStore("Intel","I7-9700K","CPU",745.49);
+            ElectronicStore part4 = new ElectronicStore("Asus","Z-390 Prime","MotherBoard",329.29);
+            ElectronicStore part5 = new ElectronicStore("G-SKILL","Trident-Z 32GB","Ram",282.59);
+            ElectronicStore part6 = new ElectronicStore("Corsair","275R Mid-Tower","Case",109.29);
         computerBuild.addPart(part1);
         computerBuild.addPart(part2);
         computerBuild.addPart(part3);
@@ -92,6 +105,9 @@ public class PCBuildController implements Initializable {
         computerBuild.addPart(part6);
 
         displayComputerParts(computerBuild); /** Starts the display method **/
+
+        //start with graphics card
+        IvOne.setImage(graphicsCard);
     }
 
 
@@ -137,15 +153,34 @@ public class PCBuildController implements Initializable {
     }
     @FXML
     private void btnNextPartPushed(){
-        if(i < 5){
+        if(i <= 6){
             i++;
+            IvOne.setImage(graphicsCard);
+            if(i == 1){
+                IvOne.setImage(cpufan);
+            }
+            else if(i == 2){
+                IvOne.setImage(cpu);
+            }
+            else if(i == 3){
+                IvOne.setImage(motherboard);
+            }
+            else if(i == 4){
+                IvOne.setImage(ram);
+            }
+            else if(i == 5){
+                IvOne.setImage(pcCase);
+            }
+            else if(i == 6){
+                i = 0; /** Resets the loops of parts in case **/
+            }
             Computer computerBuild = new Computer("510 Bryne Drive, ON L4N 9P6");
-            ElectronicStore part1 = new ElectronicStore("Nvidia","RTX 3070","Graphics Card",1199.19);
-            ElectronicStore part2 = new ElectronicStore("Cooler Master","Hyper 212 Black","CPU Fan",59.89);
-            ElectronicStore part3 = new ElectronicStore("Intel","I7-9700K","CPU",745.49);
-            ElectronicStore part4 = new ElectronicStore("Asus","Z-390 Prime","MotherBoard",329.29);
-            ElectronicStore part5 = new ElectronicStore("G-SKILL","Trident-Z 32GB","Ram",282.59);
-            ElectronicStore part6 = new ElectronicStore("Corsair","275R Mid-Tower","Case",109.29);
+                ElectronicStore part1 = new ElectronicStore("Nvidia","RTX 3070","Graphics Card",1199.19);
+                ElectronicStore part2 = new ElectronicStore("Cooler Master","Hyper 212 Black","CPU Fan",59.89);
+                ElectronicStore part3 = new ElectronicStore("Intel","I7-9700K","CPU",745.49);
+                ElectronicStore part4 = new ElectronicStore("Asus","Z-390 Prime","MotherBoard",329.29);
+                ElectronicStore part5 = new ElectronicStore("G-SKILL","Trident-Z 32GB","Ram",282.59);
+                ElectronicStore part6 = new ElectronicStore("Corsair","275R Mid-Tower","Case",109.29);
             computerBuild.addPart(part1);
             computerBuild.addPart(part2);
             computerBuild.addPart(part3);
