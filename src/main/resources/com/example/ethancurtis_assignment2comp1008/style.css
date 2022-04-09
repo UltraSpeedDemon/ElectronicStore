@@ -1,7 +1,7 @@
 .root{
     -fx-background-image: url('img/computerBuild.jpg');
     -fx-background-position: center center;
-    -fx-background-size: 700px;
+    -fx-background-size: 1000px;
 }
 .button{
     -fx-font-size: 20px;
