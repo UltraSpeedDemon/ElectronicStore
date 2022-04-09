@@ -80,18 +80,18 @@
             <Font name="Consolas" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="numParts" layoutX="586.0" layoutY="111.0" prefHeight="41.0" prefWidth="72.0" text="numParts" textFill="YELLOW">
+      <Label fx:id="numParts" layoutX="586.0" layoutY="111.0" prefHeight="41.0" prefWidth="72.0" textFill="YELLOW">
          <font>
             <Font name="Consolas" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="value" layoutX="586.0" layoutY="73.0" prefHeight="41.0" prefWidth="138.0" text="value" textFill="#f6ff00">
+      <Label fx:id="value" layoutX="586.0" layoutY="73.0" prefHeight="41.0" prefWidth="138.0" textFill="#f6ff00">
          <font>
             <Font name="Consolas" size="14.0" />
          </font>
       </Label>
       <Button fx:id="btnNextPart" layoutX="271.0" layoutY="226.0" mnemonicParsing="false" onAction="#btnNextPartPushed" prefHeight="41.0" prefWidth="114.0" text="Next Part" />
-      <Button fx:id="btnAddPart" layoutX="271.0" layoutY="304.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="Buy Part" />
+      <Button fx:id="btnAddPart" layoutX="271.0" layoutY="304.0" mnemonicParsing="false" onAction="#btnAddPartPushed" prefHeight="41.0" prefWidth="114.0" text="Buy Part" />
       <Label layoutX="490.0" layoutY="192.0" text="WishList" textFill="RED" underline="true" wrapText="true">
          <font>
             <Font name="System Bold" size="20.0" />

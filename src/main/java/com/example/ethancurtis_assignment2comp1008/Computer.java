@@ -46,6 +46,7 @@ public class Computer {
         String output = df.format(totalPrice);
         return output;
     }
+
     public String getParts(){ /** contains all of the parts in the Computer Build**/
         String partList = "";
         for (ElectronicStore part : parts)
